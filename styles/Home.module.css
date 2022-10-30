@@ -2,42 +2,53 @@
   display: flex;
 }
 
-.Title {
-  margin: 20px;
-  font-size: 32px;
-  letter-spacing: -0.06em;
+.MainTitle {
+  margin: 4vh;
+  font-size: 6vh;
+  letter-spacing: -0.06rem;
 }
 
 .SideLine {
   transform: rotate(270deg);
   font-style: normal;
   font-weight: 200;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 3vh;
   position: absolute;
-  top: 190px;
-  right: -90px;
+  top: 22vh;
+  right: -12vh;
 }
 
 .RefsWrapper {
   position: absolute;
-  width: 100px;
+  width: 20vh;
   display: flex;
   justify-content: space-between;
-  bottom: 40px;
-  left: 50px;
+  bottom: 4vh;
+  left: 5vh;
   z-index: 200;
 }
 
+.RefImg {
+  width: 6vh;
+  height: 6vh;
+  position: absolute;
+  bottom: 1vh;
+  transition: color ease-in-out 0.1s, bottom 0.1s;
+}
+
 .RefImg:hover {
-  color: rgb(0, 89, 255);
+  position: absolute;
+  bottom: 2vh;
+  color: rgba(245, 69, 0, 0.884);
 }
 
 .NameAsImg {
   position: absolute;
-  bottom: 20px;
-  right: 0px;
+  bottom: 2vh;
+  right: 0vh;
   scale: 0.8;
+  width: 60vh;
+  height: auto;
 }
 
 /*///////////////////////////////*/
@@ -46,11 +57,12 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  width: 96.5%;
-  height: 90%;
+  width: 50%;
+  height: 60%;
   overflow: hidden;
-  bottom: 20px;
-  z-index: 100;
+  bottom: 18vh;
+  left: 48vh;
+  z-index: 60;
 }
 
 .testbubbles {
@@ -60,14 +72,14 @@
 
 .testbubbles span {
   position: relative;
-  width: 15px;
-  height: 15px;
+  width: 2vh;
+  height: 2vh;
   background-color: rgba(255, 115, 0, 0.945);
   margin: 0 8px;
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgb(236, 108, 3), 0 0 50px rgb(184, 166, 8),
     0 0 100 orange;
-  animation: animate 15s linear infinite;
+  animation: animate 1s linear infinite;
 }
 
 .testbubbles span:nth-child(even) {
@@ -87,104 +99,104 @@
 }
 
 .testbubbles span:nth-child(1) {
-  animation-duration: 8s;
+  animation-duration: 4s;
   scale: 0.5;
 }
 .testbubbles span:nth-child(2) {
   scale: 0.6;
-  animation-duration: 12s;
+  animation-duration: 6s;
 }
 .testbubbles span:nth-child(3) {
   scale: 0.2;
-  animation-duration: 14s;
+  animation-duration: 7s;
 }
 .testbubbles span:nth-child(4) {
   scale: 0.1;
-  animation-duration: 16s;
+  animation-duration: 2s;
 }
 .testbubbles span:nth-child(5) {
   scale: 0.7;
-  animation-duration: 14s;
+  animation-duration: 8s;
 }
 .testbubbles span:nth-child(6) {
   scale: 0.9;
-  animation-duration: 20s;
+  animation-duration: 5s;
 }
 .testbubbles span:nth-child(7) {
   scale: 0.88;
-  animation-duration: 13s;
+  animation-duration: 11s;
 }
 .testbubbles span:nth-child(8) {
-  animation-duration: 21s;
+  animation-duration: 2s;
   scale: 0.52;
 }
 .testbubbles span:nth-child(9) {
   scale: 0.4;
-  animation-duration: 19s;
+  animation-duration: 7s;
 }
 .testbubbles span:nth-child(10) {
-  animation-duration: 20s;
+  animation-duration: 6s;
   scale: 0.32;
 }
 .testbubbles span:nth-child(11) {
-  animation-duration: 22s;
+  animation-duration: 9s;
   scale: 0.26;
 }
 .testbubbles span:nth-child(12) {
-  animation-duration: 25s;
+  animation-duration: 15s;
   scale: 0.43;
 }
 .testbubbles span:nth-child(13) {
-  animation-duration: 18s;
+  animation-duration: 2s;
   scale: 0.62;
 }
 .testbubbles span:nth-child(14) {
-  animation-duration: 21s;
+  animation-duration: 7s;
   scale: 0.73;
 }
 .testbubbles span:nth-child(15) {
-  animation-duration: 15s;
+  animation-duration: 1s;
   scale: 0.12;
 }
 .testbubbles span:nth-child(16) {
-  animation-duration: 13s;
+  animation-duration: 4s;
   scale: 0.33;
 }
 .testbubbles span:nth-child(17) {
-  animation-duration: 12s;
+  animation-duration: 7s;
   scale: 0.54;
 }
 .testbubbles span:nth-child(18) {
-  animation-duration: 17s;
+  animation-duration: 3s;
   scale: 0.3;
 }
 .testbubbles span:nth-child(19) {
-  animation-duration: 8s;
+  animation-duration: 4s;
   scale: 0.28;
 }
 .testbubbles span:nth-child(20) {
-  animation-duration: 13s;
+  animation-duration: 2.5s;
   scale: 0.6;
 }
 .testbubbles span:nth-child(21) {
-  animation-duration: 17s;
+  animation-duration: 6s;
   scale: 0.31;
 }
 .testbubbles span:nth-child(22) {
-  animation-duration: 9s;
+  animation-duration: 3s;
   scale: 0.63;
 }
 .testbubbles span:nth-child(23) {
-  animation-duration: 12s;
+  animation-duration: 7s;
   scale: 0.63;
 }
 .testbubbles span:nth-child(24) {
-  animation-duration: 6s;
+  animation-duration: 7.4s;
   scale: 0.23;
 }
 .testbubbles span:nth-child(25) {
-  animation-duration: 17s;
-  scale: 0.13;
+  animation-duration: 3.1s;
+  scale: 0.73;
 }
 
 .testAshes {
@@ -195,10 +207,259 @@
 
 .ashes {
   position: absolute;
-
-  width: 28vw;
-  height: 56vh;
-  top: 29.5vh;
-  left: 38vw;
+  width: 30vw;
+  height: 60vh;
+  top: 25.8vh;
+  left: 37.8vw;
   z-index: 80;
+  cursor: pointer;
+}
+
+.titles {
+  position: absolute;
+  top: 39vh;
+  left: 47vw;
+}
+
+.ProjectstitleHidden {
+  font-size: 42px;
+  font-weight: 1000;
+  position: absolute;
+  top: 0px;
+  transition: all ease-in-out 0.6s;
+}
+.ContacttitleHidden {
+  font-size: 42px;
+  font-weight: 1000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.6s;
+}
+.AbouttitleHidden {
+  font-size: 42px;
+  font-weight: 1000;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.6s;
+}
+
+.Projectstitle {
+  font-size: 8vh;
+  font-weight: 1000;
+  position: absolute;
+  top: -26vh;
+  z-index: 70;
+  transition: all ease-in-out 0.6s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.Contacttitle {
+  font-size: 7vh;
+  font-weight: 1000;
+  position: absolute;
+  z-index: 70;
+  top: -5vh;
+  left: 30vh;
+  transition: all ease-in-out 0.6s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.Abouttitle {
+  font-size: 7vh;
+  font-weight: 1000;
+  position: absolute;
+  left: -26vh;
+  top: -2vh;
+  z-index: 70;
+  transition: all ease-in-out 0.6s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Abouttitle:hover {
+  position: absolute;
+  left: -30vh;
+  top: 1vh;
+  scale: 1.2;
+  z-index: 80;
+  opacity: 1;
+}
+.Contacttitle:hover {
+  top: -6vh;
+  left: 33vh;
+  scale: 1.2;
+  z-index: 80;
+  opacity: 1;
+}
+.Projectstitle:hover {
+  position: absolute;
+  top: -29vh;
+  scale: 1.2;
+  z-index: 80;
+  opacity: 1;
+}
+
+.PageIsLoad {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10vh;
+  width: 100vh;
+  height: 75vh;
+  z-index: 100;
+  margin: 10vh;
+  animation: pageLoader 0.5s linear;
+}
+
+@keyframes pageLoader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.PageTitle {
+  display: flex;
+  align-items: center;
+  font-size: 6vh;
+  font-weight: 1000;
+}
+
+.BackIcon {
+  width: 4vh;
+  height: 4vh;
+  margin: 0vh 2vh;
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.BackIcon:hover {
+  color: rgba(255, 115, 0, 0.945);
+}
+
+.AboutContent {
+  font-size: 3vh;
+  font-weight: 550;
+  margin: 4vh 8vh;
+}
+
+.ProjectList {
+  overflow-wrap: break-word;
+  margin: 0vh 3vh;
+  list-style: none;
+  font-size: 3vh;
+  font-weight: 500;
+}
+
+.ProjectList li {
+  margin: 2vh 0vh;
+  cursor: pointer;
+  transition: font-size 0.1s ease-in-out;
+  padding: 2vh;
+}
+
+.ProjectList li:hover {
+  color: rgba(255, 115, 0, 0.945);
+  font-weight: 1000;
+}
+
+.ContactContent {
+  display: flex;
+  flex-direction: column;
+  font-size: 3vh;
+  width: 54vh;
+  margin-left: 8.5vh;
+}
+
+.UnderContactTitle {
+  letter-spacing: 0.2vh;
+  font-size: 2vh;
+  font-weight: 1000;
+  margin: 2vh 0vh;
+}
+
+.PersonalInfoInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 54vh;
+}
+
+.PersonalInfoInput input {
+  width: 26vh;
+  height: 4vh;
+  border: none;
+  background: rgba(98, 148, 197, 0.7);
+  font-size: 2vh;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.PersonalInfoInput input::placeholder {
+  padding: 0.5vh;
+  color: #ffffff;
+}
+
+.PersonalInfoInput input:focus {
+  outline: none;
+}
+.PersonalInfoInput input:focus::placeholder {
+  color: transparent;
+}
+
+.MessageInput {
+  width: 54vh;
+  height: 20vh;
+  margin: 2vh 0vh;
+  background-color: aliceblue;
+  resize: none;
+  background: rgba(98, 148, 197, 0.7);
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 2vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-weight: 1000;
+  letter-spacing: 0.2vh;
+}
+.MessageInput:focus {
+  outline: none;
+}
+.MessageInput::placeholder {
+  color: #ffffff;
+  font-size: 2vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2vh;
+  font-weight: 1000;
+  padding: 0.5vh;
+}
+
+.MessageInput:focus::placeholder {
+  color: transparent;
+}
+
+.ContactContent button {
+  width: 54vh;
+  height: 5vh;
+  font-size: 2vh;
+  background-color: #ffffff;
+  border: none;
+  color: rgba(98, 148, 197, 0.7);
+  font-weight: 800;
+  cursor: pointer;
+  transition: scale 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+.ContactContent button:hover {
+  scale: 1.05;
+  background-color: #f3f3f3;
+}
+
+.ContactAlso {
+  position: absolute;
+  bottom: 10vh;
+  left: -6.5vh;
 }
