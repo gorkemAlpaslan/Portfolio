@@ -1,39 +1,22 @@
 html {
   padding: 1vh;
-  margin: 0;
+  margin: 1vh;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
-  background-image: url(../public//Background.png);
-  width: 100%;
-  height: 100%;
+  background-image: url(../public/Background.png);
+  height: 98%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
+  border: 0.5vh solid white;
 }
 
 body {
-  border: 0.5vh solid white;
+  color: white;
   width: 100%;
   height: 100%;
-  color: white;
-}
-
-/*///////////////////////////RESPONSİVE LATER/////////////////////////*/
-
-@media (max-width: 600px) {
-  html,
-  body {
-    background-image: url(../public//Mobile_Background.png);
-  }
 }

@@ -4,11 +4,7 @@ import ashes from "../public/Ashes.png";
 import Image from "next/image";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <div>
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

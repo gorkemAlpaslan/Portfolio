@@ -1,11 +1,7 @@
-.container {
-  display: flex;
-}
-
 .MainTitle {
   margin: 4vh;
   font-size: 6vh;
-  letter-spacing: -0.06rem;
+  letter-spacing: -0.06vh;
 }
 
 .SideLine {
@@ -15,7 +11,7 @@
   font-size: 3vh;
   position: absolute;
   top: 22vh;
-  right: -12vh;
+  right: -10.5vh;
   cursor: pointer;
 }
 
@@ -24,23 +20,27 @@
   width: 20vh;
   display: flex;
   justify-content: space-between;
-  bottom: 4vh;
-  left: 5vh;
+  bottom: 3vh;
+  left: 6vh;
   z-index: 200;
 }
 
+.RefsWrapper a {
+  width: 6vh;
+  height: 6vh;
+}
+
+.RefsWrapper a:hover > .RefImg {
+  transform: translateY(-2vh);
+  color: rgba(245, 69, 0, 0.884);
+}
+
 .RefImg {
+  color: #ffffff;
   width: 6vh;
   height: 6vh;
   position: absolute;
-  bottom: 1vh;
   transition: color ease-in-out 0.1s, bottom 0.1s;
-}
-
-.RefImg:hover {
-  position: absolute;
-  bottom: 2vh;
-  color: rgba(245, 69, 0, 0.884);
 }
 
 .NameAsImg {
@@ -75,18 +75,18 @@
   position: relative;
   width: 2vh;
   height: 2vh;
-  background-color: rgba(255, 115, 0, 0.945);
-  margin: 0 8px;
+  background-color: rgba(255, 196, 0, 0.945);
+  margin: 0 0.7vh;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px rgb(236, 108, 3), 0 0 50px rgb(184, 166, 8),
-    0 0 100 orange;
+  box-shadow: 0 0 0 0.1vh rgb(212, 13, 13), 0 0 0.2vh rgb(255, 102, 0),
+    0vh 0vh 1vh orange;
   animation: animate 1s linear infinite;
 }
 
 .testbubbles span:nth-child(even) {
   background-color: rgba(245, 69, 0, 0.884);
-  box-shadow: 0 0 0 10px rgb(255, 170, 100), 0 0 50px rgb(252, 186, 7),
-    0 0 100 rgb(255, 252, 70);
+  box-shadow: 0 0 0 0.1vh rgb(255, 170, 100), 0 0 0.2vh rgb(252, 186, 7),
+    0vh 0vh 1vh rgb(255, 252, 70);
 }
 
 @keyframes animate {
@@ -202,7 +202,7 @@
 
 .testAshes {
   position: absolute;
-  left: 600px;
+  left: 60vh;
   z-index: 1;
 }
 
@@ -223,26 +223,26 @@
 }
 
 .ProjectstitleHidden {
-  font-size: 42px;
+  font-size: 4.2vh;
   font-weight: 1000;
   position: absolute;
-  top: 0px;
+  top: 0vh;
   transition: all ease-in-out 0.6s;
 }
 .ContacttitleHidden {
-  font-size: 42px;
+  font-size: 4.2vh;
   font-weight: 1000;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0vh;
+  left: 0vh;
   transition: all ease-in-out 0.6s;
 }
 .AbouttitleHidden {
-  font-size: 42px;
+  font-size: 4.2vh;
   font-weight: 1000;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0vh;
+  left: 0vh;
   transition: all ease-in-out 0.6s;
 }
 
@@ -343,9 +343,10 @@
 }
 
 .AboutContent {
-  font-size: 3vh;
-  font-weight: 550;
+  font-size: 2.5vh;
+  font-weight: 1000;
   margin: 4vh 8vh;
+  letter-spacing: 0.25vh;
 }
 
 .ProjectList {
@@ -356,16 +357,59 @@
   font-weight: 500;
 }
 
-.ProjectList li {
+.ProjectListItem {
   margin: 2vh 0vh;
   cursor: pointer;
   transition: font-size 0.1s ease-in-out;
   padding: 2vh;
+  font-size: 3.5vh;
+  font-weight: 1000;
+  width: fit-content;
 }
 
-.ProjectList li:hover {
+.ProjectListItem:hover {
   color: rgba(255, 115, 0, 0.945);
   font-weight: 1000;
+}
+
+.Hidden {
+  display: none;
+}
+
+.test {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectTitle {
+  display: flex;
+  align-items: center;
+}
+
+.ProjectLink {
+  font-size: 6vh;
+  font-weight: 1000;
+  text-decoration: none;
+  color: white;
+}
+.ProjectLink:hover {
+  color: rgba(255, 115, 0, 0.945);
+}
+
+.link {
+  transform: rotate(90deg);
+  width: 4vh;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.ProjectDetails {
+  margin-top: 2vh;
+  margin-left: 9vh;
+  font-size: 2.5vh;
+  font-weight: 1000;
+  letter-spacing: 0.2vh;
 }
 
 .ContactContent {
@@ -396,7 +440,7 @@
   border: none;
   background: rgba(98, 148, 197, 0.7);
   font-size: 2vh;
-  border: 1px solid #ffffff;
+  border: 0.1vh solid #ffffff;
   color: #ffffff;
 }
 .PersonalInfoInput input::placeholder {
@@ -418,7 +462,7 @@
   background-color: aliceblue;
   resize: none;
   background: rgba(98, 148, 197, 0.7);
-  border: 1px solid #ffffff;
+  border: 0.1vh solid #ffffff;
   color: #ffffff;
   font-size: 2vh;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
